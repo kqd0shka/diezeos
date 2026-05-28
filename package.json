@@ -7,9 +7,9 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "dev": "tsx src/bot.ts",
+    "dev": "tsx bot.ts",
     "build": "tsc",
-    "start": "node dist/bot.js"
+    "start": "node --loader tsx bot.ts"
   },
   "dependencies": {
     "@napi-rs/canvas": "^1.0.0",
