@@ -321,4 +321,4 @@ process.on("uncaughtException", (error) => {
 
 // LOGS
 
-client.login(config.DISCORD_TOKEN);
+client.login(process.env.DISCORD_TOKEN);
