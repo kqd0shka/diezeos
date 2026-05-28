@@ -4,8 +4,8 @@
   "description": "",
   "license": "ISC",
   "author": "",
-  "type": "commonjs",
-  "main": "index.js",
+  "type": "module",
+  "main": "bot.ts",
   "scripts": {
     "dev": "tsx bot.ts",
     "build": "tsc",
