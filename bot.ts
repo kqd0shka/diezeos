@@ -29,7 +29,7 @@ console.error = (...args: any[]) => {
 
 
 import { Client, Guild, GuildMember, EmbedBuilder, userMention, GatewayIntentBits, Partials } from "discord.js";
-import { config } from "./config";
+import { TICKET_CATEGORIES } from './config';  // ✅ Работает через index.ts
 import { DeployCommands } from "./deploy-commands";
 import { commands } from "./commands";
 import { addVoiceTime } from "./services/stats.service";
