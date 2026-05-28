@@ -11,4 +11,4 @@ COPY . .
 
 EXPOSE 3000
 
-CMD ["npx", "tsx", "src/bot.ts"]
+CMD ["npx", "tsx", "bot.ts"]
