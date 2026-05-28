@@ -30,7 +30,7 @@ console.error = (...args: any[]) => {
 
 import { Client, Guild, GuildMember, EmbedBuilder, userMention, GatewayIntentBits, Partials } from "discord.js";
 import { TICKET_CATEGORIES } from './config';  // ✅ Работает через index.ts
-import { DeployCommands } from "./deploy-commands";
+//import { DeployCommands } from "./deploy-commands";
 import { commands } from "./commands";
 import { addVoiceTime } from "./services/stats.service";
 import { db } from "./database/database"
@@ -199,7 +199,7 @@ client.once("clientReady", async (client) => {
 
         for (const guild of client.guilds.cache.values()) {
             await loadTemplateChannelsCache(guild);
-            await DeployCommands({guildId: guild.id,});
+            //await DeployCommands({guildId: guild.id,});
         console.log(`\t🟢 ${client.user?.username} авторизован на ${guild.name}`);
         }
         /*
