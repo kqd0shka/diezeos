@@ -6,6 +6,11 @@ import { achievements } from './achievments';
 import { getServerTimeInfo } from "./getServerTime";
 
 
+import { fileURLToPath } from 'url';
+import { dirname } from 'path';
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+
 const fontPath = path.join(__dirname, "../assets/fonts/", 'jacobSans.ttf');
 
 const emojifontPath = path.join(__dirname, "../assets/fonts/", 'segoeEmoji.ttf');
